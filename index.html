@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="fifteen0Five - kopi enak untuk menemani harimu.">
+  <title>fifteen0Five | Coffee Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home"><span class="brand-mark">☕</span> fifteen0Five </span></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home">Beranda</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">Tentang</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+    <button class="cart-button" id="openCart" aria-label="Buka keranjang">
+      Keranjang <span id="cartCount">0</span>
+    </button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">TEMAN TERBAIK SETIAP HARI</p>
+        <h1>Secangkir kopi,<br><em>sejuta cerita.</em></h1>
+        <p class="hero-copy">Nikmati kopi pilihan dengan rasa yang pas untuk menemani setiap aktivitasmu.</p>
+        <a class="primary-button" href="#menu">Lihat Menu <span>↗</span></a>
+        <div class="hero-note"><span class="note-line"></span> Dibuat segar setelah dipesan</div>
+      </div>
+      <div class="hero-image-wrap">
+        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=1200&q=85" alt="Segelas kopi susu dingin">
+        <div class="floating-card"><span></span><div><strong>Good coffee</strong><small>Good mood all day</small></div></div>
+      </div>
+    </section>
+
+    <section class="menu-section section-wrap" id="menu">
+      <div class="section-heading">
+        <div><p class="eyebrow">PILIHAN FAVORIT</p><h2>Menu <em>kopi kami.</em></h2></div>
+        <p>Dibuat dari bahan pilihan, disajikan untuk bikin harimu lebih baik.</p>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="promo-band">
+      <div><p class="eyebrow">WAKTUNYA NGOPI</p><h2>Hari yang baik dimulai<br>dari kopi yang baik.</h2></div>
+      <a class="light-button" href="#menu">Pesan sekarang ↗</a>
+    </section>
+
+    <section class="about-section section-wrap" id="about">
+      <div class="about-image"><img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1000&q=85" alt="Suasana kedai kopi"></div>
+      <div class="about-copy"><p class="eyebrow">CERITA KAMI</p><h2>Lebih dari sekadar <em>secangkir kopi.</em></h2><p>Kopi Kita hadir untuk menemani jeda di tengah kesibukan. Kami percaya, kopi yang enak tidak harus rumit. Cukup bahan berkualitas, racikan yang pas, dan dibuat dengan sepenuh hati.</p><a href="#contact" class="text-link">Kenalan lebih dekat ↗</a></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <p class="eyebrow">ADA YANG INGIN DITANYAKAN?</p>
+      <h2>Ngopi bareng <em>fifteen0Five.</em></h2>
+      <p>Hubungi kami untuk pemesanan atau informasi lebih lanjut.</p>
+      <a class="primary-button" id="contactWhatsapp" href="https://wa.me/6281234567890" target="_blank" rel="noopener">Chat WhatsApp ↗</a>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#home">☕ fifteen0Five.</span></a><p>© 2026 fifteen0Five. Dibuat dengan ☕.</p><a href="#home">Kembali ke atas ↑</a></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-panel" id="cartPanel" aria-label="Keranjang belanja" aria-hidden="true">
+    <div class="cart-header"><div><p class="eyebrow">PESANANMU</p><h2>Keranjang</h2></div><button id="closeCart" class="close-button" aria-label="Tutup keranjang">×</button></div>
+    <div class="cart-items" id="cartItems"><p class="empty-cart">Keranjangmu masih kosong. Pilih kopi favoritmu dulu, ya.</p></div>
+    <div class="cart-footer"><div class="total-row"><span>Total</span><strong id="cartTotal">Rp0</strong></div><button class="checkout-button" id="checkoutButton">Pesan via WhatsApp ↗</button><small>Pesanan akan dikirim melalui WhatsApp untuk konfirmasi.</small></div>
+  </aside>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
